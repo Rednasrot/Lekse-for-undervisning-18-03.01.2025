@@ -1,7 +1,7 @@
 const carPush = document.querySelector('#carPush');
 const carPop = document.querySelector('#carPop');
 const carUnshift = document.querySelector('#carUnshift');
-const Shift = document.querySelector('#carShift');
+const carShift = document.querySelector('#carShift');
 
 const carDisplay = [];
 
