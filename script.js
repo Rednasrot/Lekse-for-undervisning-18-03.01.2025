@@ -27,7 +27,7 @@ carPop.addEventListener('click', function () {
 
 carUnshift.addEventListener('click', function () {
   let inputCar = document.querySelector('#inputCar');
-  parkingLot.pop(inputCar.value);
+  parkingLot.unshift(inputCar.value);
 
   let carDisplay = document.querySelector('#carDisplay');
   carDisplay.textContent = carDisplay;
@@ -37,10 +37,10 @@ carUnshift.addEventListener('click', function () {
 
 carShift.addEventListener('click', function () {
   let inputCar = document.querySelector('#inputCar');
-  carDisplay.pop(inputCar.value);
+  carDisplay.shift(inputCar.value);
 
-  let parkingLot = document.querySelector('#carDisplay');
-  carDisplay.textContent = parkingLot;
+  let = document.querySelector('#carDisplay');
+  carDisplay.textContent = carDisplay;
 
   inputCar.value = '';
 });
