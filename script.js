@@ -8,39 +8,31 @@ const carDisplay = [];
 carPush.addEventListener('click', function () {
   let inputCar = document.querySelector('#inputCar');
   carDisplay.push(inputCar.value);
-
-  let carDisplay = document.querySelector('#carDisplay');
-  carDisplay.textContent = carDisplay;
-
+  let carDisplayElement = document.querySelector('#carDisplay');
+  carDisplayElement.textContent = carDisplay;
   inputCar.value = '';
 });
 
 carPop.addEventListener('click', function () {
+  carDisplay.pop();
+  let carDisplayElement = document.querySelector('#carDisplay');
+  carDisplayElement.textContent = carDisplay;
   let inputCar = document.querySelector('#inputCar');
-  carDisplay.pop(inputCar.value);
-
-  let carDisplay = document.querySelector('#carDisplay');
-  carDisplay.textContent = carDisplay;
-
   inputCar.value = '';
 });
 
 carUnshift.addEventListener('click', function () {
   let inputCar = document.querySelector('#inputCar');
-  parkingLot.unshift(inputCar.value);
-
-  let carDisplay = document.querySelector('#carDisplay');
-  carDisplay.textContent = carDisplay;
-
+  carDisplay.unshift(inputCar.value);
+  let carDisplayElement = document.querySelector('#carDisplay');
+  carDisplayElement.textContent = carDisplay;
   inputCar.value = '';
 });
 
 carShift.addEventListener('click', function () {
+  carDisplay.shift();
+  let carDisplayElement = document.querySelector('#carDisplay');
+  carDisplayElement.textContent = carDisplay;
   let inputCar = document.querySelector('#inputCar');
-  carDisplay.shift(inputCar.value);
-
-  let = document.querySelector('#carDisplay');
-  carDisplay.textContent = carDisplay;
-
   inputCar.value = '';
 });
